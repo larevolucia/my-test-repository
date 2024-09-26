@@ -1,1 +1,4 @@
 Git Lesson Notes
+git status: checks changes, new file and folder creations.
+git add [filename]: add files to staging status
+git commit -m [Commit Message] [filename]: commits files
