@@ -6,3 +6,4 @@ git commit -m [Commit Message] [filename]: commits files
 git rm --cached [filename]: remove file from staging
 git diff [filename]: shows difference in files versions
 git log: lists the commitments that have been made
+git reset --hard [xxxxxx]: reset to previous commit by using first six digits of commit Key
