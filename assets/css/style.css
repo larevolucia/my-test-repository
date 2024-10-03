@@ -24,6 +24,16 @@ h1, h2, h3 {
     color: var(--highlight-color)
 }
 
+/*Navbar*/
+#navbar{
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    height: 30px;
+    width: 30px;
+}
+
 /*tem css for grid visualization*/
 /* .container, .row {
     border: 2px solid black;
