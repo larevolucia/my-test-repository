@@ -21,6 +21,13 @@ h3 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
 }
+h1,
+h2 {
+  text-transform: uppercase;
+}
+h2 {
+  margin-bottom: 2rem;
+}
 
 .sub-heading-color {
   color: var(--highlight-color);
@@ -41,6 +48,18 @@ h3 {
 #header .lead {
   font-family: var(--secondary-font);
 }
+
+/*Services*/
+
+#services .card-footer{
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--highlight-color);
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
 /*tem css for grid visualization*/
 /* .container, .row {
     border: 2px solid black;
@@ -49,3 +68,32 @@ h3 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+
+/*Medium devices: tablets 768px wide and up*/
+@media screen and (min-width:768px) {
+    #services .card-body{
+        /*make all service cars the same height for consistency*/
+        min-height:191px;
+    }
+}
+/*Large devices: tablets 992px wide and up*/
+@media screen and (min-width:992px) {
+    #services .card-body{
+        /*make all service cars the same height for consistency*/
+        min-height:auto;
+    }
+}
+/*XL devices: tablets 1200px wide and up*/
+@media screen and (min-width:1200px) {
+    #services .card-body{
+        /*make all service cars the same height for consistency*/
+        min-height:220px;
+    }
+}
+/*XXL devices: tablets 1400px wide and up*/
+@media screen and (min-width:1400px) {
+    #services .card-body{
+        /*make all service cars the same height for consistency*/
+        min-height:194px;
+    }
+}
