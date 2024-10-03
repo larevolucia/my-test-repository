@@ -1,99 +1,125 @@
 /* Google fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Macondo&display=swap');
 
 /* CSS Variables */
 :root {
-  --primary-font: "Inter", sans-serif;
-  --secondary-font: "Macondo", cursive;
-  --primary-color: #3a2620; /* dark brown */
-  --secondary-color: #aa9581; /* light brown */
-  --highlight-color: #416a8e; /* blue */
-  --highlight-color-light: #7a9fc2; /* light blue */
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620; /* dark brown */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
 
+/* Global styles */
+
 body {
-  font-family: var(--primary-font);
+    font-family: var(--primary-font);
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--secondary-font);
-  color: var(--primary-color);
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
+
 h1,
 h2 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
+
 h2 {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .sub-heading-color {
-  color: var(--highlight-color);
+    color: var(--highlight-color);
 }
+
 .section {
-  margin-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-/*Navbar*/
+
+/* Navbar */
+
 #navbar {
-  background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 #navbar .logo {
-  height: 30px;
-  width: 30px;
+    width: 30px;
 }
-/*Header*/
+
+/* Header */
+
 #header .lead {
-  font-family: var(--secondary-font);
+    font-family: var(--secondary-font);
 }
 
-/*Services*/
+/* Services */
 
-#services .card-footer{
+#services .card-footer {
     font-weight: bold;
-    background-color: transparent;
     color: var(--highlight-color);
+    background-color: transparent;
 }
 
 #services .card {
     margin-bottom: 1.5rem;
 }
-/*tem css for grid visualization*/
-/* .container, .row {
+
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
+
+/* grid visualisation CSS for testing */
+
+/* .container,
+.row {
     border: 2px solid black;
 }
+
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
 } */
 
-/*Medium devices: tablets 768px wide and up*/
-@media screen and (min-width:768px) {
-    #services .card-body{
-        /*make all service cars the same height for consistency*/
-        min-height:191px;
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 191px;
     }
 }
-/*Large devices: tablets 992px wide and up*/
-@media screen and (min-width:992px) {
-    #services .card-body{
-        /*make all service cars the same height for consistency*/
-        min-height:auto;
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto;
     }
 }
-/*XL devices: tablets 1200px wide and up*/
-@media screen and (min-width:1200px) {
-    #services .card-body{
-        /*make all service cars the same height for consistency*/
-        min-height:220px;
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
     }
 }
-/*XXL devices: tablets 1400px wide and up*/
-@media screen and (min-width:1400px) {
-    #services .card-body{
-        /*make all service cars the same height for consistency*/
-        min-height:194px;
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
     }
 }
