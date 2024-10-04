@@ -109,19 +109,19 @@
               <div class="row">
                 <div class="col-12 col-lg-6 mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input class="form-control" id="name" required />
+                  <input class="form-control" id="name" name="name" required />
                 </div>
                 <div class="col-12 col-lg-6 mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input class="form-control" id="email" required />
+                  <input class="form-control" id="email" name="email" required />
                 </div>
                 <div class="col-12 col-lg-6 mb-3">
                   <label for="phone" class="form-label">Phone number</label>
-                  <input class="form-control" id="phone" required />
+                  <input class="form-control" id="phone" name="phone" required />
                 </div>
                 <div class="col-12 col-lg-6 mb-3">
                   <label for="event-type" class="form-label">Event type</label>
-                  <select id="event-type" class="form-select" >
+                  <select id="event-type" name="event-type" class="form-select" >
                     <option selected>Select</option>
                     <option value="regular-play" required>Reserve a table</option>
                     <option value="dnd">Dungeons & Dragons</option>
@@ -135,7 +135,7 @@
                   <textarea
                     class="form-control"
                     rows="6"
-                    id="message" required
+                    id="message" name="message" required
                   ></textarea>
                 </div>
               </div>
