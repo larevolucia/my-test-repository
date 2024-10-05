@@ -129,20 +129,21 @@ h2 {
 .custom-button-outline {
   border: 3px solid var(--highlight-color);
   padding: 7px 25px;
-  color: var(--highlight-color)
+  color: var(--highlight-color);
 }
 
 .custom-button-outline:hover {
   background-color: var(--highlight-color);
-  color: white
+  color: white;
 }
 
-.highlight-text{
+.highlight-text {
   border: 2px solid var(--highlight-color);
   background-color: var(--highlight-color);
   color: white;
-margin: 0 auto;
-text-align: center;}
+  margin: 0 auto;
+  text-align: center;
+}
 /* grid visualisation CSS for testing */
 
 /* .container,
