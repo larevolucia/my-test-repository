@@ -136,6 +136,13 @@ h2 {
   background-color: var(--highlight-color);
   color: white
 }
+
+.highlight-text{
+  border: 2px solid var(--highlight-color);
+  background-color: var(--highlight-color);
+  color: white;
+margin: 0 auto;
+text-align: center;}
 /* grid visualisation CSS for testing */
 
 /* .container,
