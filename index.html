@@ -43,7 +43,11 @@
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -241,7 +245,7 @@
           </div>
           <div class="col-12 col-md-6 col-xl-3">
             <div class="card">
-              <img src="assets/images/services-3.webp" class="card-img-top" />
+              <img src="assets/images/services-3.webp" alt="Students playing chess at Boardwalk games event" class="card-img-top" />
               <div class="card-body">
                 <h3 class="card-title sub-heading-color">Events</h3>
                 <p class="card-text">
@@ -298,7 +302,6 @@
             </p>
           </div>
           <div class="col-12 col-lg-6">
-            <!--Placeholder table-->
             <table class="table table-sm table-hover">
               <thead>
                 <tr>
@@ -329,7 +332,6 @@
                 </tr>
               </tbody>
             </table>
-            <!--Placeholer button-->
             <div class="highlight-text w-75">
               *Get 20% off with a student ID
             </div>
@@ -445,25 +447,26 @@
     ></script>
 
     <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-<script>
-  document
-      .querySelectorAll(".navbar-collapse .nav-link")
-      .forEach((link) => {
+    <script>
+      document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
           link.addEventListener("click", function (e) {
-              let section = document.querySelector(e.target.getAttribute("href"));
-              if (section) {
-                  e.preventDefault(); // Prevent default anchor click behavior
-                  let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                  window.scroll({
-                      top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                      behavior: "smooth",
-                  });
-                  document
-                      .querySelector(".navbar-collapse")
-                      .classList.remove("show"); // Collapse navbar
-              }
+            let section = document.querySelector(e.target.getAttribute("href"));
+            if (section) {
+              e.preventDefault(); // Prevent default anchor click behavior
+              let navbarHeight =
+                document.querySelector(".navbar-toggler").offsetHeight;
+              window.scroll({
+                top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                behavior: "smooth",
+              });
+              document
+                .querySelector(".navbar-collapse")
+                .classList.remove("show"); // Collapse navbar
+            }
           });
-      });
-</script>
+        });
+    </script>
   </body>
 </html>
